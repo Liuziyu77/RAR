@@ -113,19 +113,5 @@ After that, navigate to the **Fine-Grained Visual Recognition** folder, run `bui
 ```
 Next, you can run our provided `Fine-Grained Visual Recognition/retrieve_test.ipynb` code to use our retrieval method for reselecting names. When U get the names, replace these names in `FineR/experiments/pet37/guess/pet_llm_gussed_names_3.json` with these new names, and run `sh FineR/scripts_eval/p_pipe.sh` to eval the sACC and cACC.
 
-## 📋 LICENSE
-```
-Copyright 2024 Ziyu Liu
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+## 📄 License
+![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg) ![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg) **Usage and License Notices**: The data and checkpoint is intended and licensed for research use only.
