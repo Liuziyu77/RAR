@@ -8,11 +8,11 @@
     ·
     <a href="https://yuhangzang.github.io/"><strong>Yuhang Zang</strong></a>
     ·
+    <a href="https://scholar.google.be/citations?user=41KAd6AAAAAJ&hl=en"><strong>Wei Li</strong></a>
+    ·
     <a href="https://panzhang0212.github.io/"><strong>Pan Zhang</strong></a>
     ·
     <a href="https://lightdxy.github.io/"><strong>Xiaoyi Dong</strong></a>
-    ·
-     <a href="https://scholar.google.be/citations?user=41KAd6AAAAAJ&hl=en"><strong>Wei Li</strong></a>
     ·
      <a href="http://yjxiong.me/"><strong>Yuanjun Xiong</strong></a>
     ·
