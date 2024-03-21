@@ -113,5 +113,17 @@ After that, navigate to the **Fine-Grained Visual Recognition** folder, run `bui
 ```
 Next, you can run our provided `Fine-Grained Visual Recognition/retrieve_test.ipynb` code to use our retrieval method for reselecting names. When U get the names, replace these names in `FineR/experiments/pet37/guess/pet_llm_gussed_names_3.json` with these new names, and run `sh FineR/scripts_eval/p_pipe.sh` to eval the sACC and cACC.
 
+## Citation
+```
+@misc{liu2024rar,
+      title={RAR: Retrieving And Ranking Augmented MLLMs for Visual Recognition}, 
+      author={Ziyu Liu and Zeyi Sun and Yuhang Zang and Wei Li and Pan Zhang and Xiaoyi Dong and Yuanjun Xiong and Dahua Lin and Jiaqi Wang},
+      year={2024},
+      eprint={2403.13805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
 ## 📄 License
 ![Code License](https://img.shields.io/badge/Code%20License-Apache_2.0-green.svg) ![Data License](https://img.shields.io/badge/Data%20License-CC%20By%20NC%204.0-red.svg) **Usage and License Notices**: The data and code are intended and licensed for research use only.
