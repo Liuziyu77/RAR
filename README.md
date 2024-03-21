@@ -21,7 +21,7 @@
      <a href="https://myownskyw7.github.io/"><strong>Jiaqi Wang</strong></a>
   </p>
   <h2 align="center">Submitted to arXiv</h2>
-  📖<a href="https://github.com/Liuziyu77/RAR">Paper</a> |🏠<a href="https://github.com/Liuziyu77/RAR">Homepage</a></h3>
+  📖<a href="https://arxiv.org/pdf/2403.13805.pdf">Paper</a> |🏠<a href="https://liuziyu77.github.io/RAR/">Homepage</a></h3>
 <div align="center"></div>
 <p align="center">
   <p>
