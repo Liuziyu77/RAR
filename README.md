@@ -33,8 +33,8 @@ In this paper, we highlight the potential of combining <strong>retrieving and ra
 <br>
 
 ## 📢 News
-- 🚀 [03/25/2024] We publish our finetune data, and the code to generate the finetune data. Our example json data is built on FGVC-Aircraft, you can explore more possibility with more datasets!!!
-- 🚀 [03/20/2024] We upload part of our code in github, including Fine-Grained Visual Recognition and Few-Shot Image Recognition. More updata is coming soon!!!
+- 🚀 [03/25/2024] We publish our finetune data, and the code to generate the finetune data. Our example json data is built on FGVC-Aircraft, you can explore more possibility with more datasets !!!
+- 🚀 [03/20/2024] We upload part of our code in github, including Fine-Grained Visual Recognition and Few-Shot Image Recognition. More updata is coming soon !!!
 - 🚀 [03/20/2024] Our work is submitted to arXiv.
 
 ## 💡 Highlights
@@ -86,7 +86,9 @@ An finetune data example is shown below:
     "conversations": [
         {
             "from": "user",
-            "value": "Here is a image:<Img index=1><image></Img>. Please play the role of a aircraft classification expert, and sort the provided categories from high to low according to the top 5 similarity with the input image. Here are the optional categories:['707-320', 'DC-8', 'DC-6', 'L-1011', '707-320']."
+            "value": "Here is a image:<Img index=1><image></Img>. Please play the role of a aircraft classification expert,
+                     and sort the provided categories from high to low according to the top 5 similarity with the input image.
+                     Here are the optional categories:['707-320', 'DC-8', 'DC-6', 'L-1011', '707-320']."
         },
         {
             "from": "assistant",
