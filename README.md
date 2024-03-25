@@ -33,11 +33,12 @@ In this paper, we highlight the potential of combining <strong>retrieving and ra
 <br>
 
 ## 📢 News
+- 🚀 [03/25/2024] We publish our finetune data, and the code to generate the finetune data. Our example json data is built on FGVC-Aircraft, you can explore more possibility with more datasets!!!
 - 🚀 [03/20/2024] We upload part of our code in github, including Fine-Grained Visual Recognition and Few-Shot Image Recognition. More updata is coming soon!!!
 - 🚀 [03/20/2024] Our work is submitted to arXiv.
 
 ## 💡 Highlights
-- 🔥 We conduct an in-depth analysis of the strengths and weaknesses of VLMs and MLLMs in processing fine-grained datasets.
+- 🔥 We are excited to announce the publication of our fine-tuning data, along with the code used to generate this data. Our sample JSON data is based on the FGVC-Aircraft dataset. You are encouraged to expand your research and experiments with additional datasets to uncover even more possibilities!
 - 🔥 Our RAR can be seamlessly integrated into various MLLMs in a plug-and-play manner.
 - 🔥 Through rigorous testing across 11 classification datasets and 2 object detection datasets, we demonstrate that our method outperforms baselines on a variety of visual recognition tasks.
 
@@ -46,6 +47,7 @@ In this paper, we highlight the potential of combining <strong>retrieving and ra
 ### 📃 Contents
 - [Install](#install)
 - [Prepare Data](#Prepare-Data)
+- [Generate finetune data](#Generate-finetune-data)
 - [Few-Shot Image Classification](#Few-Shot-Image-Classification)
 - [Fine-Grained Visual Recognition](#Fine-Grained-Visual-Recognition)
 
@@ -67,6 +69,32 @@ conda activate rar  # activate the environment and install dependencies
 
 ### 💾 Prepare Data
 Navigate to the **CLIP-Cls** folder, and prepare the data following the instructions.
+
+### 📅 Generate finetune data
+In our experiments, we have finetuned several MLLMs (Multimodal Large Language Models). The purpose of finetuning these models is to tap into their classification potential, enabling the MLLMs to provide answers in a standardized format. This facilitates the processing of our final results. 
+
+Within the `finetune` folder, we have included an `.ipynb` file for generating finetune data. The JSON file in this folder, based on the FGVA-Aircraft dataset, contains pre-generated finetune data. With minor format adjustments, this JSON file can be used for finetuning models such as LLaVa, Intern-Xcomposer, Qwen, and others.
+
+An finetune data example is shown below:
+
+```python
+{
+    "id": 0,
+    "image": [
+        "your picture path"
+    ],
+    "conversations": [
+        {
+            "from": "user",
+            "value": "Here is a image:<Img index=1><image></Img>. Please play the role of a aircraft classification expert, and sort the provided categories from high to low according to the top 5 similarity with the input image. Here are the optional categories:['707-320', 'DC-8', 'DC-6', 'L-1011', '707-320']."
+        },
+        {
+            "from": "assistant",
+            "value": "['707-320', '707-320', 'DC-8', 'DC-6', 'L-1011']"
+        }
+    ]
+}
+```
 
 ### 🔍 Few-Shot Image Classification
 #### 📋 Build memory
@@ -113,7 +141,7 @@ After that, navigate to the **Fine-Grained Visual Recognition** folder, run `bui
 ```
 Next, you can run our provided `Fine-Grained Visual Recognition/retrieve_test.ipynb` code to use our retrieval method for reselecting names. When U get the names, replace these names in `FineR/experiments/pet37/guess/pet_llm_gussed_names_3.json` with these new names, and run `sh FineR/scripts_eval/p_pipe.sh` to eval the sACC and cACC.
 
-## Citation
+## ✒️Citation
 ```
 @misc{liu2024rar,
       title={RAR: Retrieving And Ranking Augmented MLLMs for Visual Recognition}, 
